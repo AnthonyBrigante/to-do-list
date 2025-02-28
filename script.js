@@ -57,3 +57,9 @@ function removeTask (index){
    displayTasks()
 
 }
+document.getElementById('clearTask').addEventListener('click', function () {
+    //Empty array
+    tasks = []
+    //Updates array
+    displayTasks()
+})

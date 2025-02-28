@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+.container-fluid {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input and Button */
+input[type="text"] {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#addTaskButton {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#addTaskButton:hover {
+    background-color: #0056b3;
+}
+
+/* Task List */
+#taskList {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.list-group-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    background: #f8f9fa;
+}
+
+/* Remove Button */
+.btn-dark {
+    background-color: #28a745;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #218838;
+}
+
+/* Clear All Button */
+#clearTask {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#clearTask:hover {
+    background-color: #c82333;
+}

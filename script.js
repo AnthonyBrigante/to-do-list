@@ -63,3 +63,24 @@ document.getElementById('clearTask').addEventListener('click', function () {
     //Updates array
     displayTasks()
 })
+function displayTasks() {
+    let taskList = document.getElementById('taskList');
+    let taskCounter = document.getElementById('taskCounter'); // Grab the counter element
+
+    taskList.innerHTML = '';
+
+    tasks.forEach((task, index) => {
+        let li = document.createElement('li');
+        li.classList.add(
+            'list-group-item',
+            'd-flex',
+            'justify-content-between',
+            'align-items-center'
+        );
+        li.innerHTML = `${task} <button class='btn btn-dark btn-sm' onclick='removeTask(${index})'> √ </button>`;
+        taskList.appendChild(li);
+    });
+
+    // Update the task counter
+    taskCounter.textContent = `Tasks: ${tasks.length}`;
+}

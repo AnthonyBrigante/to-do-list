@@ -1,88 +1,130 @@
-/* General Styles */
+/* General body styling */
 body {
-    background-color: #f4f4f4;
-    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Container */
+/* Main container settings */
 .container-fluid {
     max-width: 600px;
     background: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Header */
+/* Header styling */
 h1 {
-    color: #333;
-    font-size: 26px;
-    margin-bottom: 20px;
+    color: #ff4757;
+    font-size: 28px;
     font-weight: bold;
+    text-align: center;
 }
 
-/* Input and Button */
+/* Input field design */
 input[type="text"] {
-    border: 2px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid #ff6b81;
+    border-radius: 8px;
     padding: 10px;
     font-size: 16px;
 }
 
-#addTaskButton {
-    background-color: #007bff;
+/* Primary button design */
+.btn-primary {
+    background: #ff4757;
     border: none;
-    padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-#addTaskButton:hover {
-    background-color: #0056b3;
+.btn-primary:hover {
+    background: #e84118;
 }
 
-/* Task List */
+/* "Clear All Tasks" button */
+#clearTask {
+    background: #ff6348;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#clearTask:hover {
+    background: #d63447;
+}
+
+/* Task list design */
 #taskList {
     margin-top: 20px;
     padding: 0;
 }
 
-.list-group-item {
-    background: #fff;
+/* Individual task item */
+.task-item {
+    background: #f8f9fa;
     border: 1px solid #ddd;
     padding: 12px;
     font-size: 16px;
-    transition: 0.3s;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
 }
 
-.list-group-item:hover {
-    background: #f8f9fa;
+.task-item:hover {
+    background: #ffeaa7;
+    transform: scale(1.02);
 }
 
-/* Remove Button */
-.btn-dark {
-    background-color: #28a745;
+/* Completed task style */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    background: #dcdde1;
+}
+
+/* Button for marking tasks as completed */
+.btn-success {
+    background: #2ed573;
     border: none;
     font-size: 14px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-.btn-dark:hover {
-    background-color: #218838;
+.btn-success:hover {
+    background: #1e90ff;
 }
 
-/* Clear All Button */
-#clearTask {
-    background-color: #dc3545;
+/* Button for removing tasks */
+.btn-danger {
+    background: #e74c3c;
     border: none;
-    padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
-#clearTask:hover {
-    background-color: #c82333;
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+/* Task counter design */
+#taskCounter {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4757;
+}
+
+/* Fade-in animation for the page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
